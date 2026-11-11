@@ -10,7 +10,7 @@ license: MIT
 version: "1.0.0"
 date-released: "2026-11-11"
 # doi: TODO after Zenodo release
-# repository-code: TODO GitHub URL
+repository-code: "https://github.com/icastellamcdonald11-prog/Following-the-Sun-"
 preferred-citation:
   type: article
   title: "Following the Sun? Utility-scale solar siting efficiency and the resource frontier in China, 2017–2024"

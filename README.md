@@ -9,7 +9,7 @@ Archived version: <!-- TODO: Zenodo DOI badge after the first release -->
 ## Quick start: reproduce the paper's figures and recomputed numbers
 
 ```bash
-git clone <!-- TODO: GitHub URL -->
+git clone https://github.com/icastellamcdonald11-prog/Following-the-Sun-.git following-the-sun-code
 cd following-the-sun-code
 # place the processed inputs (data/README.md) in data/processed/ and data/derived/
 Rscript run_paper.R
