@@ -4,6 +4,8 @@ title: "Following the Sun? Code and derived data"
 authors:
   - family-names: "Castella McDonald"
     given-names: "Isaac"
+    affiliation: "Department of Global Health and Development, Peking University"
+  # TODO: co-author (supervisor)
 license: MIT
 version: "1.0.0"
 date-released: "2026-11-11"
