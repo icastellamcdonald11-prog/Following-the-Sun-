@@ -1,0 +1,4 @@
+"Test","Pre_N","Post_N","Alternative","D_statistic","p_value","Interpretation"
+"Unweighted (plant count)",10249,6464,"Post < Pre (FOSD)",0.0011,"9.90e-01","Fail to reject H₀"
+"Capacity-weighted",2007637,1555275,"Post < Pre (FOSD)",0.1109,"0.00e+00","Reject H₀ at 1%"
+"Capacity-weighted (two-sided)",2007637,1555275,"Two-sided",0.1109,"0.00e+00","Reject H₀ at 1%"

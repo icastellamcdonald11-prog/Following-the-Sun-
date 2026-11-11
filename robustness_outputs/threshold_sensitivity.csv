@@ -1,0 +1,4 @@
+"threshold","pvout_cutoff","pct_below_unwtd","pct_below_capwt","shortfall_twh","capex_bn_rmb"
+"Q75 (top 25%).75%",1660.527,90.1,70.7,22219.4,1288.1
+"Q80 (top 20%).80%",1693.631,94.5,76.6,25401.1,1472.5
+"Q90 (top 10%).90%",1777.624,98.8,95.3,34630.4,2007.6

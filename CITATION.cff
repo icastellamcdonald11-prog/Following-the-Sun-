@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article and the archived software."
+title: "Following the Sun? Code and derived data"
+authors:
+  - family-names: "Castella McDonald"
+    given-names: "Isaac"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-11"
+# doi: TODO after Zenodo release
+# repository-code: TODO GitHub URL
+preferred-citation:
+  type: article
+  title: "Following the Sun? Utility-scale solar siting efficiency and the resource frontier in China, 2017–2024"
+  authors:
+    - family-names: "Castella McDonald"
+      given-names: "Isaac"
+  year: 2026
+  # journal / doi: TODO on publication

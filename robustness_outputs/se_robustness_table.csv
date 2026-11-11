@@ -1,0 +1,5 @@
+"SE_estimator","coef_post2020","SE","p_value","CI_low","CI_high","sig"
+"HC1 (heteroskedasticity-robust)",-2.431,4.28,0.5701,-10.82,5.958,""
+"HC3 (small-sample adjusted)",-2.431,5.047,0.6301,-12.323,7.461,""
+"Province-clustered (main spec)",-2.431,2.493,0.3373,-7.317,2.455,""
+"Two-way (province x year)",-2.431,2.697,0.3974,-7.717,2.855,""

@@ -1,0 +1,13 @@
+"Test","Value"
+"A: log(FAI/km²) vs pre-2020 mean rank (Pearson r)",0.0853
+"A: log(FAI/km²) vs post-2020 mean rank (Pearson r)",-0.1196
+"B: OLS delta_rank ~ log(FAI/km²) [bivariate] — beta",-1.055
+"B: OLS delta_rank ~ log(FAI/km²) [bivariate] — p",0.3987
+"B: OLS delta_rank ~ log(FAI/km²) [controlled] — beta",-2.191
+"B: OLS delta_rank ~ log(FAI/km²) [controlled] — p",0.2356
+"B: OLS delta_rank ~ FAI CAGR [controlled] — beta",-52.6151
+"B: OLS delta_rank ~ FAI CAGR [controlled] — p",0.3977
+"C: post2020 × log(FAI/km²) interaction — beta",-1.0643
+"C: post2020 × log(FAI/km²) interaction — p",0.6343
+"C: post2020 × FAI CAGR interaction — beta",-30.5839
+"C: post2020 × FAI CAGR interaction — p",0.6143
