@@ -15,7 +15,7 @@ Note: `robustness_outputs/table_R1_ks_test.csv` labels both Kolmogorov–Smirnov
 
 ## Processed inputs (`data/processed/`, or set `FTS_PROCESSED`)
 
-Needed by `run_paper.R` and the full pipeline. They are deposited with the archived release. <!-- TODO: Zenodo DOI -->
+Needed by `run_paper.R` and the full pipeline. They are not in the repository; they will be added to the Zenodo record (https://doi.org/10.5281/zenodo.24186119) or are available from the corresponding author.
 
 | File | Used by |
 |---|---|

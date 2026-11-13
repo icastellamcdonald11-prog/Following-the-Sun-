@@ -4,7 +4,9 @@ Code for **Castella McDonald, I. *Following the Sun? Utility-scale solar siting 
 
 The analysis measures the resource quality of China's utility-scale photovoltaic fleet (16,713 plants, 356.3 GW, Q4 2017–Q2 2024). It combines a satellite plant inventory with photovoltaic output potential (PVOUT) and the locations of high-voltage substations, and classifies each plant by resource quality and transmission cost.
 
-Archived version: <!-- TODO: Zenodo DOI badge after the first release -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24186119.svg)](https://doi.org/10.5281/zenodo.24186119)
+
+Archived version: https://doi.org/10.5281/zenodo.24186119 (v1.0.0)
 
 ## Quick start: reproduce the paper's figures and recomputed numbers
 
