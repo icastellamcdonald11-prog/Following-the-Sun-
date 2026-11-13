@@ -26,6 +26,7 @@ This runs, in order:
 | `R/paper/deterioration_shares.R` | `outputs/analysis/deterioration_*.csv` | Methods eq. 12; Supplementary Note 10, Table S11 |
 | `R/paper/si_distribution_tests.R` | `outputs/analysis/si_distribution_tests.csv` | Supplementary Note 17, Table S14 |
 | `R/paper/si_robustness_figs.R` | `outputs/figures/si/*.pdf` | Supplementary Figs. S20–S22 |
+| `R/paper/threshold_sensitivity.R` | `outputs/analysis/threshold_sensitivity_*.csv` | Supplementary Note 19, Tables S8, S16, S17 |
 
 They read the derived plant and land tables in `fig_cache/`, the substation lists in `transmission/` and the saved test results in `robustness_outputs/`, all included here.
 
