@@ -1,8 +1,10 @@
 source("config.R")  # repository paths; run scripts from the repository root
 # =============================================================================
 # deterioration_shares.R: provincial contributions to the post-2020 change
-# (Methods eq. 12) at benchmark B = 4.22 kWh kWp-1 d-1 = 1,540.3 kWh kWp-1 yr-1
-# (DECISIONS D6, 11 Nov 2026), with the bootstrap CI on the same benchmark.
+# (Methods eq. 12) at benchmark B = capacity-weighted mean PVOUT of capacity
+# installed before Q2 2020 (1,510.6 kWh kWp-1 yr-1; DECISIONS D9, 13 Nov 2026),
+# against which the contributions sum exactly to the change in the fleet mean.
+# Bootstrap CI on the same (fixed) benchmark.
 #
 # Run from the project root:  Rscript paper/analysis/deterioration_shares.R
 #
@@ -16,10 +18,11 @@ source("config.R")  # repository paths; run scripts from the repository root
 # =============================================================================
 
 suppressPackageStartupMessages(library(dplyr))
-B <- 4.22 * 365
 p <- readRDS("fig_cache/plants_quad.rds")
 qn <- function(x) as.integer(substr(x, 1, 4)) * 4 + as.integer(substr(x, 6, 6))
+pre  <- p[qn(p$year_quarter) <  qn("2020Q2"), ]
 post <- p[qn(p$year_quarter) >= qn("2020Q2"), ]
+B <- weighted.mean(pre$pvout, pre$cap_mw)
 en <- function(x) dplyr::recode(x, Neimenggu = "Inner Mongolia", Xizang = "Tibet")
 
 shares <- function(d) {

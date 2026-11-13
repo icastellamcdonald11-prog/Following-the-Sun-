@@ -203,8 +203,9 @@ stock_series <- function(dat) {
   data.frame(t = qs, pv = sapply(qs, function(q) {
     s <- dat[dat$t <= q, ]; weighted.mean(s$pvout, s$cap_mw) }))
 }
-# Equation 12 benchmark: 4.22 kWh kWp-1 d-1 = 1,540.3 kWh kWp-1 yr-1 (DECISIONS D6).
-DET_BENCH <- 4.22 * 365
+# Equation 12 benchmark: capacity-weighted mean PVOUT of capacity installed
+# before Q2 2020 (1,510.6 kWh kWp-1 yr-1; DECISIONS D9).
+DET_BENCH <- with(plants[plants$t < 2020.25, ], weighted.mean(pvout, cap_mw))
 
 fig3 <- function() {
   s_all <- stock_series(plants)

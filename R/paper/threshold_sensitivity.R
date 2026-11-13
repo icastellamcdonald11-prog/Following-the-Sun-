@@ -12,7 +12,7 @@ source("config.R")  # repository paths; run scripts from the repository root
 #    used for land in Figs 1 and 4).
 # C. Deterioration benchmark B in equation 12: feasible-land median (1,470),
 #    capacity-weighted mean PVOUT of capacity installed before Q2 2020, and
-#    4.22 kWh kWp-1 d-1 (1,540, main text).
+#    4.22 kWh kWp-1 d-1 (1,540, thesis value). Main text: pre-2020 fleet mean (D9).
 # Outputs: paper/analysis/threshold_sensitivity_{A,B,C}.csv
 # =============================================================================
 
@@ -63,7 +63,7 @@ print(B, row.names = FALSE)
 # ---- C. deterioration benchmark ----------------------------------------------
 post <- p[p$q >= qn("2020Q2"), ]
 pre_mean <- weighted.mean(p$pvout[p$q < qn("2020Q2")], p$cap_mw[p$q < qn("2020Q2")])
-bench <- c("Feasible-land median" = m, "Pre-2020 fleet mean" = pre_mean, "4.22 kWh/kWp/d (main)" = 4.22 * 365)
+bench <- c("Feasible-land median" = m, "Pre-2020 fleet mean (main)" = pre_mean, "4.22 kWh/kWp/d (thesis)" = 4.22 * 365)
 C <- do.call(rbind, lapply(names(bench), function(nm) {
   B0 <- bench[[nm]]
   s <- post |> group_by(prov) |>
