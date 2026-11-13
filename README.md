@@ -1,6 +1,6 @@
 # Following the Sun? Code and derived data
 
-Code for **Castella McDonald, I. *Following the Sun? Utility-scale solar siting efficiency and the resource frontier in China, 2017–2024*** (manuscript, 2026). <!-- TODO: journal reference and DOI on publication -->
+Code for **Castella McDonald, I. & Pan, Y. *Following the Sun? Utility-scale solar siting efficiency and the resource frontier in China, 2017–2024*** (manuscript, 2026). <!-- TODO: journal reference and DOI on publication -->
 
 The analysis measures the resource quality of China's utility-scale photovoltaic fleet (16,713 plants, 356.3 GW, Q4 2017–Q2 2024). It combines a satellite plant inventory with photovoltaic output potential (PVOUT) and the locations of high-voltage substations, and classifies each plant by resource quality and transmission cost.
 
